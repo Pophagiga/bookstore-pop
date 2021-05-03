@@ -19,6 +19,7 @@
       </nav>
       <form id="searchBar" class="pull-right">
 	<input type="search" placeholder="ค้นหาสินค้า">
+      <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
 </form>
     </header> 
   </div>
@@ -82,15 +83,19 @@ input:-moz-placeholder {
 input::-webkit-input-placeholder {
 	color: #999;
 }
+	  .mglass {
+	display: inline-block;
+	pointer-events: none;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+}
 
 	  
     #searchBar {
               display: inline-block; 
 	      padding-left: 20rem;
-	    -webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
 	    
     }
 	  #searchBar input[type=search] {
