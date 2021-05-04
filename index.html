@@ -264,14 +264,13 @@ nav > ul {
 /* Slideshow container */
 .slideshow-container {
   	max-width: 1000px;
-	max-height: 1000px;
   	float: center;
   	margin: auto;
 	padding-top: 7rem;
 	display: block;
 	margin-left: auto;
   	margin-right: auto;
-  	width: 100%;
+  	width: 40%;
 }
 
 /* Hide the images by default */
@@ -365,6 +364,37 @@ nav > ul {
             </style>
 
 <script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+	
+	
+	
 	var slideIndex = 0;
 showSlides();
 
