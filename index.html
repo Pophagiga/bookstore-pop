@@ -344,9 +344,9 @@ nav > ul {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 9s;
+  -webkit-animation-duration: 4.5s;
   animation-name: fade;
-  animation-duration: 9s;
+  animation-duration: 4.5s;
 }
 
 @-webkit-keyframes fade {
@@ -407,7 +407,7 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 10000); 
+  setTimeout(showSlides, 5000); 
 }
 	
 </script>
