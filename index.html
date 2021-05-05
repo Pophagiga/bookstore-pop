@@ -151,8 +151,8 @@
                                 	<img src="https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg" style="width:50%">
 				</p>
                        	</div>
-					<a href="#" class="previous2 round">&#8249;</a>
-					<a href="#" class="next2 round">&#8250;</a>
+					<a href="#" class="previous1 round">&#8249;</a>
+					<a href="#" class="next1 round">&#8250;</a>
                               
 		</div>
 
@@ -332,6 +332,40 @@ input::-webkit-input-placeholder {
   background-color: #ddd;
   color: black;
 }
+	  
+	  .previous1, .next1 {
+  cursor: pointer;
+  position: absolute;
+top: 120%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+
+  user-select: none;
+}
+
+	  .round {
+	border-radius: 52%;	  
+	  }
+
+/* Position the "next button" to the right */
+.next1 {
+  right: 18rem;
+}
+	  
+.previous1 {
+  left: 12rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.previous1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+	  
 
 .previous2, .next2 {
   cursor: pointer;
@@ -340,7 +374,7 @@ top: 150%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: red;
+  color: #f2f2f2;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
