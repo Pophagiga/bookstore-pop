@@ -551,9 +551,9 @@
 
 	.fade 		{
   					-webkit-animation-name: fade;
-  					-webkit-animation-duration: 1.5s;
+  					-webkit-animation-duration: 5s;
   					animation-name: fade;
-  					animation-duration: 1.5s;
+  					animation-duration: 5s;
 			}
 
 	@-webkit-keyframes fade {
@@ -574,7 +574,7 @@
 	outline: none;
 }
 
-.addToCart {
+#addToCart {
 	width: 20px;
 	height: 4px;
 	margin: auto;
@@ -757,7 +757,7 @@ a.cart > span.counter {
   					slideIndex++;
   						if (slideIndex > slides.length) {slideIndex = 1}
   					slides[slideIndex-1].style.display = "block";
-  					setTimeout(showSlides, 8000); 
+  					setTimeout(showSlides, 6000); 
 			}
 	
 	$(document).ready(function() {
