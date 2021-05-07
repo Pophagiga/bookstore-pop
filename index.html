@@ -30,7 +30,7 @@
 							<input type="search" placeholder="ค้นหาสินค้า" style="height: 12px;>
 						</form>
 					
-						<div>
+						<div class="addToCart">
 							<a href="#" class="add-to-cart">add to cart</a>
 							<a href="#" class="cart"><span></span></a>
 						</div>				
@@ -352,7 +352,7 @@
 	  
 	.previous1, .next1 {
   				cursor: pointer;
-  				position: relative;
+  				position: absolute;
 				top: 135%;
   				width: auto;
   				margin-top: -22px;
@@ -551,19 +551,20 @@
 
 
 	.fade 		{
-  					-webkit-animation-name: fade;
-  					-webkit-animation-duration: 4.5s;
-  					animation-name: fade;
-  					animation-duration: 4.5s;
+  					animation: fadeIn ease 10s;
+  					-webkit-animation: fadeIn ease 10s;
+  					-moz-animation: fadeIn ease 10s;
+  					-o-animation: fadeIn ease 10s;
+  					-ms-animation: fadeIn ease 10s;
 			}
 
 	@-webkit-keyframes fade {
- 		 			from {opacity: .2}
+ 		 			from {opacity: 0}
   					to {opacity: 1}
 			}
 
 	@keyframes fade {
-  					from {opacity: .4}
+  					from {opacity: 0}
   					to {opacity: 1}
 			}
 	  
@@ -575,7 +576,7 @@
 	outline: none;
 }
 
-div {
+.addToCart {
 	width: 360px;
 	height: 72px;
 	margin: auto;
