@@ -8,6 +8,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   
 										
@@ -772,19 +774,19 @@ a.cart > span.counter {
 	
 	$(document).ready(function() {
 	var count = 0;
-	$("a.add-to-cart").click(function(event) {
+	$("button.add-to-cart").click(function(event) {
 		count++;
-		$("a.add-to-cart").addClass("size");
+		$("button.add-to-cart").addClass("size");
 		setTimeout(function() {
-			$("a.add-to-cart").addClass("hover");
+			$("button.add-to-cart").addClass("hover");
 		}, 200);
 		setTimeout(function() {
-			$("a.cart > span").addClass("counter");
+			$("button.cart > span").addClass("counter");
 			$("a.cart > span.counter").text(count);
 		}, 400);
 		setTimeout(function() {
-			$("a.add-to-cart").removeClass("hover");
-			$("a.add-to-cart").removeClass("size");
+			$("button.add-to-cart").removeClass("hover");
+			$("button.add-to-cart").removeClass("size");
 		}, 600);
 		event.preventDefault();
 	});
